@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8">
+  <title>Japanese Restaurant</title>
+  <link rel="stylesheet" href="1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="D:\bootstrap\bootstrap5\icon\font\bootstrap-icons.min.css">
+</head>
+
+
+<style>
+  .but {
+    padding: 12px 24px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .but:hover {
+    background-color: #cc0000;
+  }
+</style>
+
+
+
+<style>
+  body {
+    font-family: sans-serif;
+  }
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-button {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background-color: #cc0000;
+  }
+
+  .menu:hover .dropdown {
+    display: block;
+  }
+</style>
+<body style="font-family: phetsarath ot; background-color: antiquewhite;" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="D:\ວິຊາ bootstrap 5\ໜ້າຫຼັກ.html"><i class="bi bi-house "></i>  ອາຫານທະເລ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="D:\ວິຊາ bootstrap 5\ໜ້າຫຼັກ.html"><i class="bi bi-house-fill"></i>  ໜ້າຫຼັກ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="D:\ວິຊາ bootstrap 5\ໂປຣໂມຊັນ.html"><i class="bi bi-database-fill-down"></i> ໂປຣໂມຊັນ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="D:\ວິຊາ bootstrap 5\ສິນຄ້າທີ່ໄດ້ຮັບຄວາມນິຍົມ.html"><i class="bi bi-graph-up-arrow "></i> ສິນຄ້າທີ່ໄດ້ຮັບຄວາມນິຍົມ</a>
+          </li>
+          <div class="menu">
+            <button class="menu-button bg-dark" style="color: white; "><i class="bi bi-cart4 "></i> ສິນຄ້າຕ່າງໆ</button>
+            <div class="dropdown">
+              <a href="D:\ວິຊາ bootstrap 5\1.ເຜັດຈ່າທະເລ.html">ເຜັດຈ່າທະເລ</a>
+              <a href="D:\ວິຊາ bootstrap 5\2.ຍຳມາມ່າທະເລ.html">ຍຳມາມ່າທະເລ</a>
+              <a href="D:\ວິຊາ bootstrap 5\3.ທະເລລວມມິດ.html">ທະເລລວມມິດ</a>
+              <a href="D:\ວິຊາ bootstrap 5\4.ຫອຍຄົກ.html">ຫອຍຄົກ</a>
+              <a href="D:\ວິຊາ bootstrap 5\5.ຜັດມາມ່າ.html">ຜັດມາມ່າ</a>
+              <a href="D:\ວິຊາ bootstrap 5\6.ຕົ້ມຍຳທະເລ.html">ຕົ້ມຍຳທະເລ</a>
+              <a href="D:\ວິຊາ bootstrap 5\7.ທະເລຜັດຜົງກະຫຼີ.html">ທະເລຜັດຜົງກະຫຼີ</a>
+              <a href="D:\ວິຊາ bootstrap 5\8.ຜັດກະເພົາລວມ.html">ຜັດກະເພົາລວມ</a>
+              <a href="D:\ວິຊາ bootstrap 5\9.ໝາກພ້າວອ່ອນ.html">ໝາກພ້າວອ່ອນ</a>
+              <a href="D:\ວິຊາ bootstrap 5\10.ເຂົ້າເປຽກແຫ້ງ.html">ເຂົ້າເປຽກແຫ້ງ</a>
+             
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h3><marquee behavior="alternate"  class="row  mt-2 " style="color: red; background-color: aqua;"><h1>ອາຫານທະເລ</h1></marquee></h3>
+  </p></marquee></h1>
+  <div class="row mt-0 text-center " >
+
+    <center>
+      
+      <div class="container-fluid">
+        
+          <div id="demo" class="carousel slide " data-bs-ride="carousel">
+              <!-- ພາກສ່ວນຂອງ ປຸ່ມ -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+          
+              </div>
+              <!--  ພາກສ່ວນຂອງຮູບ -->
+              <div class="carousel-inner  mt-0">
+                <div class="carousel-item active"  data-bs-interval="1000">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\71ede90ccda64400a10a97c851f1c0bc.webp" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 1</h3>
+                    <p>Yakiniku</p>
+                  </div>
+               </div>
+              <div class="carousel-item"  data-bs-interval="1500">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\711e8181136747a8a03e58e27d0676b0.webp" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 2</h3>
+                    <p>Ramen</p>
+                  </div> 
+              </div>
+              <div class="carousel-item"  data-bs-interval="2000">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\59b2331c1a0a41dbb2fb5cebf1b906c2.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 3</h3>
+                    <p>Kabayaki</p>
+                  </div>  
+              </div>
+              <div class="carousel-item"  data-bs-interval="2500">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\43a54266c4fc499c8e3dc972e19f20bd.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 4</h3>
+                    <p>Kani miso</p>
+                  </div>  
+              </div>
+              <div class="carousel-item"  data-bs-interval="3000">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\59b2331c1a0a41dbb2fb5cebf1b906c2.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 5</h3>
+                    <p>Sushi</p>
+                  </div>  
+                </div>
+                <div class="carousel-item"  data-bs-interval="3500">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\1.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 6</h3>
+                    <p>Yakisoba</p>
+                  </div>  
+                </div>
+              </div>
+              <!-- ຕົວຄວບຄຸມ ເລື່ອນຊ້າຍ - ຂວາ -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            
+    </div>
+    </center>
+
+    <div class="col-2 mt-4 ">
+      <h1 style="color: aqua; " class="">ເວັບໄຊອ້າຍຊີຊ່າ</h1>
+      <p><img src="D:\ວິຊາ bootstrap 5\jpg\cza.png" class="img-thumbnail" ></p>
+      <h1>facebook</h1>
+  </div>
+
+    <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\71ede90ccda64400a10a97c851f1c0bc.webp" class="img-thumbnail img-fluid "  >
+        <h1 class="mt-3" style="color: pink;">ເຜັດຈ່າທະເລ</h1>
+        <h2 class="mt-2 text-success">30.000 Kip</h2>
+        <button onclick="orderWarning()" type="button" class="btn btn-outline-danger" style="border: 2px solid green;"><a class="" href="D:\ວິຊາ bootstrap 5\17.html">Buy</a></button>
+    </div>
+    <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\711e8181136747a8a03e58e27d0676b0.webp" class="img-thumbnail img-fluid " >
+        <h1 class="mt-3" style="color: pink;">ຍຳມາມ່າທະເລ</h1>
+        <h2 class="mt-2 text-success">75.000 Kip</h2>
+        <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+    </div>
+    <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\59b2331c1a0a41dbb2fb5cebf1b906c2.jpg" class="img-thumbnail img-fluid" >
+      <h1 class="mt-3" style="color: pink;">ທະເລລວມມິດ </h1>
+      <h2 class="mt-2 text-success">65.000 Kip</h2>
+      <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+  </div>
+  <div class="col-lg-2 col-6 mt-5 col-sm"><img src="D:\ວິຊາ bootstrap 5\jpg\43a54266c4fc499c8e3dc972e19f20bd.jpg" class="img-thumbnail img-fluid">
+      <h1 class="mt-3" style="color: pink;">ຫອຍຄົກ</h1>
+      <h2 class="mt-2 text-success">70.000 Kip</h2>
+      <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+  </div>
+  <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\dce672bacb604fb5b744864b219ed088.webp" class="img-thumbnail img-fluid">
+      <h1 class="mt-3" style="color: pink;">ຜັດມາມ່າ </h1>
+      <h2 class="mt-2 text-success" >60.000 Kip</h2>
+      <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+  </div>
+
+  <div class="col-2">
+    
+    
+  </div>
+
+  <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\1.jpg" class="img-thumbnail img-fluid "  >
+    <h1 class="mt-3" style="color: pink;">ຕົ້ມຍຳທະເລ</h1>
+    <h2 class="mt-2 text-success">30.000 Kip</h2>
+    <button onclick="orderWarning()" type="button" class="btn btn-outline-danger "><a class="" href="D:\ວິຊາ bootstrap 5\17.html">Buy</a></button>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\2.webp" class="img-thumbnail img-fluid " >
+    <h1 class="mt-3" style="color: pink;">ທະເລຜັດຜົງກະຫຼີ</h1>
+    <h2 class="mt-2 text-success">75.000 Kip</h2>
+    <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\3.webp" class="img-thumbnail img-fluid" >
+  <h1 class="mt-3" style="color: pink;">ຜັດກະເພົາລວມ</h1>
+  <h2 class="mt-2 text-success">65.000 Kip</h2>
+  <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-sm"><img src="D:\ວິຊາ bootstrap 5\jpg\4.jpg" class="img-thumbnail img-fluid">
+  <h1 class="mt-3" style="color: pink;">ໝາກພ້າວອ່ອນ</h1>
+  <h2 class="mt-2 text-success">70.000 Kip</h2>
+  <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-md"><img src=" D:\ວິຊາ bootstrap 5\jpg\7.jpg" class="img-thumbnail img-fluid">
+  <h1 class="mt-3" style="color: pink;">ເຂົ້າເປຽກແຫ້ງ </h1>
+  <h2 class="mt-2 text-success" >60.000 Kip</h2>
+  <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a class="" href="">Buy</a></button>
+</div>
+
+<div class="bg-dark terk text-white p-5 mt-5">
+  <div class="row">
+      <div class="col-lg-6">
+          <div><h3><b><i class="bi bi-bus-front-fill"></i> ລາຍການອາຫານທີ່ໄດ້ຮັບຄວາມນິຍົມ</b></h3></div>
+
+          <div class="row">
+              <div class="col-lg-4 mt-5"><img src="D:\ວິຊາ bootstrap 5\jpg\1.jpg" class="img-thumbnail img-fluid"></div>
+              <div class="col-lg-4 mt-5"><img src="D:\ວິຊາ bootstrap 5\jpg\2.webp" class="img-thumbnail img-fluid"></div>
+              <div class="col-lg-4 mt-5"><img src="D:\ວິຊາ bootstrap 5\jpg\3.webp" class="img-thumbnail img-fluid"></div>
+          </div>
+      </div>
+
+      <div class="col-lg-6">
+          <h3><b><i class="bi bi-megaphone"></i>  ລູກຄ້າຜູ້ໃດສົມໃຈສັ່ງອາຫານໄດ້</b></h3>
+          <h4><i class="bi bi-telephome-inbound"> ຕິດຕໍ່ພວກເຮົາ</i></h4>
+          <a class="text-white mt-5" aria-label="Chat on whatsApp" href="https://web.whatsapp.com/"><h4><i class="bi bi-whatsapp" style="color: green;"></i>  whatsapp</h4></a>
+          <a class="text-white mt-5"  href="https://www.facebook.com/profile.php?id=100019968154879"><h4><i class="bi bi-facebook" style="color: dodgerblue;"></i>  facebook</h4></a>
+  
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"><img src="D:\ວິຊາ bootstrap 5\jpg\cza1.jpg" class="img-thumbnail img-fluid"></div>
+            <div class="col-lg-4"></div>  
+          </div>
+
+      </div>
+  </div>   
+    
+  </div>
+</div>
+     
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+
+
+<script>
+  
+  function orderWarning() {
+    let result = confirm("ເຈົ້າແນ່ໃຈບໍວ່າຈະສັ່ງຊື້ສິນຄ້າ?");
+    if(result){
+      alert("ຂອບໃຈທີ່ສັ່ງຊື້!");
+    } else {
+      alert("ຍົກເລີກການສັ່ງຊື້");
+    }
+  }
+  
+</script>
+
+</body>
+</html>

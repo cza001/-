@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8">
+  <title>Japanese Restaurant</title>
+  <link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="D:\bootstrap\bootstrap5\icon\font\bootstrap-icons.min.css">
+</head>
+
+
+<style>
+  .but {
+    padding: 12px 24px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .but:hover {
+    background-color: #cc0000;
+  }
+</style>
+
+
+
+<style>
+  body {
+    font-family: sans-serif;
+  }
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-button {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background-color: #cc0000;
+  }
+
+  .menu:hover .dropdown {
+    display: block;
+  }
+</style>
+<body style="font-family: phetsarath ot; background-color: antiquewhite;" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="D:\ວິຊາ bootstrap 5\ໜ້າຫຼັກ.html"><i class="bi bi-house "></i>  ອາຫານທະເລ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="D:\ວິຊາ bootstrap 5\ໜ້າຫຼັກ.html"><i class="bi bi-house-fill"></i>  ໜ້າຫຼັກ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="D:\ວິຊາ bootstrap 5\ໂປຣໂມຊັນ.html"><i class="bi bi-database-fill-down"></i> ໂປຣໂມຊັນ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="D:\ວິຊາ bootstrap 5\ສິນຄ້າທີ່ໄດ້ຮັບຄວາມນິຍົມ.html"><i class="bi bi-graph-up-arrow "></i> ເມນູທີ່ໄດ້ຮັບຄວາມນິຍົມ</a>
+          </li>
+          <div class="menu">
+            <button class="menu-button bg-dark" style="color: white; "><i class="bi bi-cart4 "></i> ເມນູຄ້າຕ່າງໆ</button>
+            <div class="dropdown">
+              <a href="D:\ວິຊາ bootstrap 5\1.ເຜັດຈ່າທະເລ.html">ເຜັດຈ່າທະເລ</a>
+              <a href="D:\ວິຊາ bootstrap 5\2.ຍຳມາມ່າທະເລ.html">ຍຳມາມ່າທະເລ</a>
+              <a href="D:\ວິຊາ bootstrap 5\3.ທະເລລວມມິດ.html">ທະເລລວມມິດ</a>
+              <a href="D:\ວິຊາ bootstrap 5\4.ຫອຍຄົກ.html">ຫອຍຄົກ</a>
+              <a href="D:\ວິຊາ bootstrap 5\5.ຜັດມາມ່າ.html">ຜັດມາມ່າ</a>
+              <a href="D:\ວິຊາ bootstrap 5\6.ຕົ້ມຍຳທະເລ.html">ຕົ້ມຍຳທະເລ</a>
+              <a href="D:\ວິຊາ bootstrap 5\7.ທະເລຜັດຜົງກະຫຼີ.html">ທະເລຜັດຜົງກະຫຼີ</a>
+              <a href="D:\ວິຊາ bootstrap 5\8.ຜັດກະເພົາລວມ.html">ຜັດກະເພົາລວມ</a>
+              <a href="D:\ວິຊາ bootstrap 5\9.ໝາກພ້າວອ່ອນ.html">ໝາກພ້າວອ່ອນ</a>
+              <a href="D:\ວິຊາ bootstrap 5\10.ເຂົ້າເປຽກແຫ້ງ.html">ເຂົ້າເປຽກແຫ້ງ</a>
+             
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h3><marquee behavior="alternate"  class="row  mt-2 " style="color: red; background-color: aqua;"><h1>ອາຫານທະເລ</h1></marquee></h3>
+  </p></marquee></h1>
+  <div class="row mt-0 text-center " >
+
+    <center>
+      
+      <div class="container-fluid">
+        
+          <div id="demo" class="carousel slide " data-bs-ride="carousel">
+              <!-- ພາກສ່ວນຂອງ ປຸ່ມ -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+              </div>
+              <!--  ພາກສ່ວນຂອງຮູບ -->
+              <div class="carousel-inner  mt-0">
+                <div class="carousel-item active"  data-bs-interval="1000">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\71ede90ccda64400a10a97c851f1c0bc.webp" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 1</h3>
+                    <p>Yakiniku</p>
+                  </div>
+               </div>
+              <div class="carousel-item"  data-bs-interval="1500">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\711e8181136747a8a03e58e27d0676b0.webp" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 2</h3>
+                    <p>Ramen</p>
+                  </div> 
+              </div>
+              <div class="carousel-item"  data-bs-interval="2000">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\59b2331c1a0a41dbb2fb5cebf1b906c2.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 3</h3>
+                    <p>Kabayaki</p>
+                  </div>  
+              </div>
+              <div class="carousel-item"  data-bs-interval="2500">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\43a54266c4fc499c8e3dc972e19f20bd.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 4</h3>
+                    <p>Kani miso</p>
+                  </div>  
+              </div>
+              <div class="carousel-item"  data-bs-interval="3000">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\59b2331c1a0a41dbb2fb5cebf1b906c2.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 5</h3>
+                    <p>Sushi</p>
+                  </div>  
+                </div>
+                <div class="carousel-item"  data-bs-interval="3500">
+                  <img src="D:\ວິຊາ bootstrap 5\jpg\1.jpg" class="d-block" style="width:100%;max-height:380;" height="600px" width="100%">
+                  <div class="carousel-caption">
+                    <h3>ຮູບ 6</h3>
+                    <p>Yakisoba</p>
+                  </div>  
+                </div>
+              </div>
+              <!-- ຕົວຄວບຄຸມ ເລື່ອນຊ້າຍ - ຂວາ -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            
+    </div>
+    </center>
+
+    <div class="row ">
+<div class="col-lg-1"></div>
+    <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\71ede90ccda64400a10a97c851f1c0bc.webp" class="img-thumbnail img-fluid "  >
+        <h1 class="mt-3" style="color: pink;">ເຜັດຈ່າທະເລ</h1>
+        <h2 class="mt-2 text-success">30.000 Kip</h2>
+        <button onclick="orderWarning()" type="button" class="btn btn-outline-danger "><a href="">Buy</a></button>
+        <div class="cza">
+        <button type="button" class="btn btn-outline-primary">Details</button>
+        <div class="dropdown text-center">
+          <h1 class="text-warning">ສວນປະກອບ</h1>
+          <p class="mt-2">
+            
+            1.ກຸ້ງ 100 ກຣາມ<br>
+
+            2.ປາຫມຶກ 100 ກຣາມ<br>
+
+            3.ຫອຍ 100 ກຣາມ<br>
+
+            4.ກະເທຍສັບ 1 ຊ້ອນໂຕ້<br>
+
+            5.ພິກແດງສັບ 1 ຊ້ອນໂຕ້<br>
+
+            6.ນ້ຳປາ 1 ຊ້ອນໂຕ້<br>
+
+            7.ນ້ຳມັນຫອຍ 1 ຊ້ອນໂຕ້<br>
+
+            8.ນ້ຳຕານທຣາຍ 1 ຊ້ອນຊາ<br>
+
+            9.ກະໄຊຊອຍ ¼ ຖ້ວຍ<br>
+
+            10.ນ້ຳມັນພືດ 1 ຊ້ອນໂຕ້<br>
+
+            11.ພິກໄທສົດ ຕາມຊອບ<br>
+
+            12.ພິກສົດ ຕາມຊອບ<br>
+
+            13.ໃບມະກຸດ ຕາມຊອບ
+          </p>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\711e8181136747a8a03e58e27d0676b0.webp" class="img-thumbnail img-fluid " >
+        <h1 class="mt-3" style="color: pink;">ຍຳມາມ່າ</h1>
+        <h2 class="mt-2 text-success">75.000 Kip</h2>
+        <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+        <div class="cza">
+        <button type="button" class="btn btn-outline-primary">Details</button>
+        <div class="dropdown text-center">
+          <h1 class="text-warning">ສວນປະກອບ</h1>
+          <p class="mt-2">
+            1.ເສັ້ນມາມ່າແບບອົບ 1 ກ້ອນ<br>
+
+            2.ກຸ້ງສົດ 1 ເຂີດ<br>
+            
+            3.ປາຫມຶກ 1 ເຂີດ<br>
+            
+            4.ພິກຂີ້ໜູຊອຍ 5 ເມັດ<br>
+            
+            5.ນ້ຳມະນາວ 2 ຊ້ອນໂຕ້<br>
+            
+            6.ນ້ຳປາ 1 ຊ້ອນໂຕ້<br>
+            
+            7.ໝາກເຂືອຕາມ 3 ເມັດ<br>
+            
+            8.ຫອມໃຫຍ່ ½ ລູກ<br>
+            
+            9.ນ້ຳຕານທຣາຍ ບໍ່ຂັດສີ 1 ຊ້ອນຊາ<br>
+            
+            10.ຂົ້ນຊ່າຍ ຊອຍ 1 ຕົ້ນ<br>
+            
+            11.ຕົ້ນຫອມ ຊອຍ 1 ຕົ້ນ
+          </p>
+
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\59b2331c1a0a41dbb2fb5cebf1b906c2.jpg" class="img-thumbnail img-fluid" >
+      <h1 class="mt-3" style="color: pink;">ທະເລລວມ</h1>
+      <h2 class="mt-2 text-success">65.000 Kip</h2>
+      <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+      <div class="cza">
+      <button  type="button" class="btn btn-outline-primary">Details</button>
+      <div class="dropdown text-center">
+        <h1 class="text-warning">ສວນປະກອບ</h1>
+        <p class="mt-2">
+
+          1.ນ້ຳສະຕັອກໄກ່ 3 ຖ້ວຍຕວງ (ປະມານ 710 ມິລິລິດ)</br>
+
+          2.ແປ້ງມັນຮ່ອງກົງ 1 ຊ້ອນໂຕ້ (ຜະສົມນ້ຳ 3 ຊ້ອນໂຕ້) <br>
+          
+          3.ນ້ຳຕານທຣາຍ ½ ຊ້ອນຊາ (ຖ້າມັກຫວານ ສາມາດເພີ່ມໄດ້) <br>
+          
+          4.ເຫຼົ້າຈີນ 1 ຊ້ອນໂຕ້<br>
+          
+          5.ນ້ຳມັນພືດ ສໍາລັບຜັດ 1 ຊ້ອນໂຕ້<br>
+          
+          6.ນ້ຳມັນ ສໍາລັບທອດ 2 ຊ້ອນໂຕ້<br>
+          
+          7.ນ້ຳມັນງາ 1 ຊ້ອນໂຕ້<br>
+          
+          8.ກະເຊັຽງປູນຶ່ງ 200 ກຣາມ (8-10 ຊິ້ນ) <br>
+          
+          9.ເຫັດຫອມແຫ້ງ ແຊ່ນ້ຳ 5 ດອກ<br>
+          
+          10.ປາຫມຶກ 200 ກຣາມ (ແນະນໍາໃຫ້ເລືອກຕົວໃຫຍ່ໆ ເນື້ອແນ່ນໆ) <br>
+          
+          11.ໜໍ່ໄມ້ທະເລ 200 ກຣາມ (1 ກະປ໋ອງ) <br>
+          
+          12.ຫອຍແຊວ 200 ກຣາມ <br>
+          
+          13.ກຸ້ງລາຍເສືອ 8 ຕົວ (ແນະນໍາໃຫ້ເລືອກຕົວໃຫຍ່ໆ ເນື້ອແນ່ນໆ) <br>
+          
+          14.ຊອສຫອຍນາງຣົມຕຣາແມັກກີ້ 2 ຊ້ອນໂຕ້ <br>
+          
+          15.ຊອສປຸງອາຫານຕຣາແມັກກີ້ 2 ຊ້ອນຊາ (20 ກຣາມ) <br>
+          
+          16.ບຣອກໂຄລີລວກພໍສຸກ 1 ຫົວ <br>
+          
+          17.ຜັກປວຍເລ້ງ 500 ກຣາມ <br>
+          
+          18.ກະເທີຍບຸບພໍແຕກສັບຫຍາບ 1 ຊ້ອນໂຕ້<br>
+
+        </p>
+      </div>
+      </div>
+  </div>
+  <div class="col-lg-2 col-6 mt-5 col-sm"><img src="D:\ວິຊາ bootstrap 5\jpg\43a54266c4fc499c8e3dc972e19f20bd.jpg" class="img-thumbnail img-fluid">
+      <h1 class="mt-3" style="color: pink;">ຫອຍຄົກ</h1>
+      <h2 class="mt-2 text-success">70.000 Kip</h2>
+      <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+      <div class="cza">
+      <button  type="button" class="btn btn-outline-primary">Details</button>
+      <div class="dropdown text-center">
+        <h1 class="text-warning">ສວນປະກອບ</h1>
+        <p class="mt-2">
+          1.ແປ້ງເຂົ້າເຈົ້າ 1 ຖ້ວຍ<br>
+
+          2.ແປ້ງທອດກອບ 1/4 ຖ້ວຍ<br>
+          
+          3.ແປ້ງເຂົ້າໂພດ 1/4 ຖ້ວຍ<br>
+          
+          4.ນ້ຳໂຊດາ ແຊ່ເຢັນຈັດ 1 + 1/2 ຖ້ວຍ<br>
+          
+          5.ເກືອ 1/2 ຊ້ອນຊາ<br>
+          
+          6.ພິກໄທ 1/2 ຊ້ອນຊາ<br>
+          
+          7.ໄຂ່ໄກ່ 4 ຟອງ<br>
+          
+          8.ຕົ້ນຫອມຊອຍ 3 ຊ້ອນຊາ<br>
+          
+          9.ແຄຣອດຫັ່ນເຕົາ 3 ຊ້ອນຊາ<br>
+          
+          10.ຊີຟູດ ຕາມຕ້ອງການ (ຫອຍແມງພູນິວຊີແລນ / ປາຫມຶກ / ກຸ້ງ) <br>
+          
+          11.ຖົ່ວງອກຜັດ ສໍາລັບຈັດເສີບ<br>
+          
+          12.ນ້ຳມັນພືດ ສໍາລັບຫຍອດລົງໃນກະທະ<br>
+        </p>
+      </div>
+      </div>
+  </div>
+  <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\dce672bacb604fb5b744864b219ed088.webp" class="img-thumbnail img-fluid">
+      <h1 class="mt-3" style="color: pink;">ຜັດມາມ່າ </h1>
+      <h2 class="mt-2 text-success" >60.000 Kip</h2>
+      <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+      <div class="cza">
+      <button  type="button" class="btn btn-outline-primary">Details</button>
+      <div class="dropdown text-center">
+        <h1 class="text-warning">ສວນປະກອບ</h1>
+        <p class="mt-2">
+          1.ມາມ່າ 4 ຊອງ<br>
+
+          2.ກຸ້ງຂາວ 10 ຕົວ<br>
+          
+          3.ປາຫມຶກ 2 ຕົວ<br>
+          
+          4.ຫອຍແຊວ 40 ກຣາມ<br>
+          
+          5.ກຸ້ງແຊບ້ວຍ 3 ຕົວ<br>
+          
+          6.ກະເທຍມ 5 ກີບ<br>
+          
+          7.ເຂົ້າໂພດອ່ອນ ຫັ່ນ 3 ຝັກ<br>
+          
+          8.ພິກຊີຟ້າແດງ 2 ເມັດ<br>
+          
+          9.ຖົ່ວຝັກຍາວ 2 ຝັກ<br>
+          
+          10.ກາດນາ ຫັ່ນ 2 ຕົ້ນ<br>
+          
+          11.ໃບກະເພົາ 1/3 ຖ້ວຍ<br>
+          
+          12.ຊອສຫອຍນາງຣົມ 1 ຊ້ອນໂຕະ<br>
+          
+          13.ນ້ຳຕານທຣາຍ 1 ຊ້ອນຊາ<br>
+          
+          14.ຊີອິ້ວຂາວ 1 ຊ້ອນໂຕະ<br>
+          
+          15.ຜົງປຸງຮສມາມ່າ 1 ຊ້ອນຊາ<br>
+        </p>
+      </div>
+      </div>
+  </div>
+
+</div>
+ <div class="col-lg-1"></div>
+  <div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\1.jpg" class="img-thumbnail img-fluid "  >
+    <h1 class="mt-3" style="color: pink;">ຕົ້ມຍຳທະເລລວມ</h1>
+    <h2 class="mt-2 text-success">30.000 Kip</h2>
+    <button onclick="orderWarning()" type="button" class="btn btn-outline-danger "><a href="D:\ວິຊາ bootstrap 5\17.html">Buy</a></button>
+    <div class="cza">
+      <button  type="button" class="  btn btn-outline-primary"> Details</button>
+      <div class="dropdown text-center">
+        <h1 class="text-warning">ສວນປະກອບ</h1>
+        <p class="mt-2">
+          1.ນ້ຳດື່ມເນສທ໌ເລເພຍໄລຟ໌ 2ຖ້ວຍຕວງ<br>
+
+          2.ຂ່າແກ່ຫັ່ນແວ່ນ 5 ແວ່ນ<br>
+          
+          3.ຕະໄຄຣ້ຫັ່ນເຉັຍງ 1 ຕົ້ນ<br>
+          
+          4.ໃບມະກຸດສີກ 5 ໃບ<br>
+          
+          5.ຜົງປຸງຮສ 1 ຊ້ອນໂຕ້<br>
+          
+          6.ລາກຜັກຊີ 2 ລາກ<br>
+          
+          7.ພິກຊີຟ້າ 5 ເມັດ<br>
+          
+          8.ໃບກະເພົາ 20 ກຣາມ<br>
+          
+          9.ເຫັດຟາງ 30 ກຣາມ<br>
+          
+          10.ນ້ຳປາ 2 ຊ້ອນໂຕ້<br>
+          
+          11.ນ້ຳມະນາວ 3 ຊ້ອນໂຕ້<br>
+          
+          12.ນ້ຳຕານ 1 ຊ້ອນໂຕ້
+          
+        </p>
+      </div>
+    </div>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\2.webp" class="img-thumbnail img-fluid " >
+    <h1 class="mt-3" style="color: pink;">ທະເລຜັດຜົງກະຫຼີ</h1>
+    <h2 class="mt-2 text-success">75.000 Kip</h2>
+    <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+    <div class="cza">
+    <button  type="button" class="btn btn-outline-primary">Details</button>
+    <div class="dropdown text-center">
+      <h1 class="text-warning">ສວນປະກອບ</h1>
+      <p class="mt-2">
+        1.ນ້ຳມັນພືດ 1 ຊ້ອນໂຕ๊ะ<br>
+
+        2.ກະທຽມສັບ 1 ຊ້ອນໂຕ๊ะ<br>
+        
+        3.ແຊວ 100 ກຣາມ<br>
+        
+        4.ກຸ້ງສົດ 100 ກຣາມ<br>
+        
+        5.ປາຫມຶກຫັ່ນ 100 ກຣາມ<br>
+        
+        6.ຜົງກະຫລີ 1 ຊ້ອນໂຕ๊ะ<br>
+        
+        7.ຊອສພິກ 1 ຊ້ອນໂຕ๊ะ<br>
+        
+        8.ຊອສຫອຍນາງລົມ ½ ຊ້ອນໂຕ๊ะ<br>
+        
+        9.ຊີອິ້ວຂາວ ½ ຊ້ອນໂຕ๊ะ<br>
+        
+        10.ພິກເຜົາ 1 ຊ້ອນໂຕ๊ะ<br>
+        
+        11.ພິກໄທປົ່ນ 1 ຊ້ອນຊາ<br>
+        
+        12.ນ້ຳຕານທຣາຍ ½ ຊ້ອນໂຕ๊ะ<br>
+        
+        13.ຫອມຫົວໃຫຍ່ຊອຍ 20 ກຣາມ<br>
+        
+        14.ກະທິ 30 ກຣາມ<br>
+        
+        15.ໄຂ່ໄກ່ 1 ຟອງ<br>
+        
+        16.ຂຶ້ນສາຍຊອຍ 20 ກຣາມ<br>
+        
+        17.ພິກຊີຟ້າແດງສະໄລສ໌ 20 ກຣາມ<br>
+      </p>
+    </div>
+    </div>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-md"><img src="D:\ວິຊາ bootstrap 5\jpg\3.webp" class="img-thumbnail img-fluid" >
+  <h1 class="mt-3" style="color: pink;">ຜັດກະເພົາລວມ</h1>
+  <h2 class="mt-2 text-success">65.000 Kip</h2>
+  <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+  <div class="cza">
+    <button  type="button" class="btn btn-outline-primary"><a href="">Details</a></button>
+  <div class="dropdown text-center">
+    <h1 class="text-warning">ສວນປະກອບ</h1>
+    <p class="mt-2">
+      1.ກຸ້ງແຊບວ້າຍ 8 ຕົວ<br>
+
+      2.ປາຫມຶກຫັ່ນຊິ້ນ 3 ຕົວ<br>
+      
+      3.ຫອຍແມງພູນິວຊີແລນ 6 ຕົວ<br>
+      
+      4.ຊອສຜັດອເນກປະສົງ ເອໂຣ່ 3 <br>
+      
+      5.ໃບກະເພົາ 2 ມັດ<br>
+      
+      6.ພິກຂີ້ໜູຈິນດາໂຂລກ 30 ເມັດ<br>
+      
+      7.ກະເທຍມໂຂລກ 20 ກີບ<br>
+      
+      8.ໃບກະເພົາ 1 ມັດ (ສຳລັບນຳໄປທອດ) <br>
+      
+      9.ນ້ຳມັນພືດ 2 ຊ້ອນໂຕະ (ສຳລັບຜັດກະເພົາ) <br>
+      
+      10.ນ້ຳມັນພືດ 1 ຖ້ວຍຕວງ (ສຳລັບທອດໃບກະເພົາ) <br>
+    </p>
+  </div>
+</div>
+  
+</div>
+<div class="col-lg-2 col-6 mt-5 col-sm"><img src="D:\ວິຊາ bootstrap 5\jpg\4.jpg" class="img-thumbnail img-fluid">
+  <h1 class="mt-3" style="color: pink;">ໝາກພ້າວອ່ອນ</h1>
+  <h2 class="mt-2 text-success">70.000 Kip</h2>
+  <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+  <div class="cza">
+  <button  type="button" class="btn btn-outline-primary">Details</button>
+  <div class="dropdown text-center">
+    <h1 class="text-warning">ສວນປະກອບ</h1>
+    <p class="mt-2">
+      1.ນ້ຳມະພຣ້າວ 100 ມິລິລິດ<br>
+
+      2.ໄຂ່ຂາວ 1 ຟອງ<br>
+      
+      3.ໃບໂຫລະພາຊອຍ 3 ໃບ<br>
+      
+      4.ໃບມະກຣູດຊອຍລະອຽດ 1 ໃບ<br>
+      
+      5.ພິກ 2 ເມັດ<br>
+      
+      6.ນ້ຳປາ 2 ຊ້ອນຊາ<br>
+      
+      7.ແປ້ງຂ້າວໂພດ 5 ກຣາມ<br>
+      
+      8.ນ້ຳຕານປີບ 15 ກຣາມ<br>
+      
+      9.ກະຊາຍສະໄລສ໌ 5 ກຣາມ<br>
+      
+      10.ຕະໄຄຣ້ຊອຍລະອຽດ 5 ກຣາມ<br>
+      
+      11.ກະທິຊາວເກາະ 100 ມິລິລິດ<br>
+      
+      12.ພິກແກງເຜັດແດງ ແມ່ພລອຍ 2 ຊ້ອນໂຕະ<br>
+      
+      13.ກະຫຼ່ຳຊອຍ 50 ກຣາມ<br>
+      
+      14.ກຸ້ງກຸລາ 1 ຕົວ<br>
+      
+      15.ປາກະພົງ 1 ຕົວ 300 ກຣາມ (ສັບ 250 ກຣາມ, ສະໄລສ໌ 50 ກຣາມ) <br>
+      
+      16.ປາຫມຶກ 1 ຕົວ<br>
+      
+      17.ຫອຍແມງພູນິວຊີແລນ 1 ຕົວ<br>
+    </p>
+  </div>
+  </div>
+</div>
+<div class="col-lg-2 col-6 mt-5 col-md"><img src=" D:\ວິຊາ bootstrap 5\jpg\7.jpg" class="img-thumbnail img-fluid">
+  <h1 class="mt-3" style="color: pink;">ເຂົ້າເປຽກແຫ້ງ </h1>
+  <h2 class="mt-2 text-success" >60.000 Kip</h2>
+  <button onclick="orderWarning()" type="button" class="btn btn-outline-danger"><a href="">Buy</a></button>
+  <div class="cza">
+    <button  type="button" class="  btn btn-outline-primary"><a href=""> Details</a></button>
+    <div class="dropdown text-center">
+      <h1 class="text-warning">ສວນປະກອບ</h1>
+      <p >
+        1.ກຸ້ງ 100 ກຣາມ<br>
+
+        2.ປາຫມຶກ 100 ກຣາມ<br>
+        
+        3.ຫອຍ 100 ກຣາມ<br>
+        
+        4.ກະເທີຍສັບ 1 ຊ້ອນໂຕ້<br>
+        
+        5.ພິກແດງສັບ 1 ຊ້ອນໂຕ້<br>
+        
+        6.ນ້ຳປາ 1 ຊ້ອນໂຕ້<br>
+        
+        7.ນ້ຳມັນຫ້ອຍ 1 ຊ້ອນໂຕ້<br>
+
+        8.ນ້ຳຕານ 1 ຊ້ອນຊາ<br>
+        
+        9.ກະໄຊຊອຍ ¼ ຖ້ວຍ<br>
+        
+        10.ນ້ຳມັນພືດ 1 ຊ້ອນໂຕ້<br>
+        
+        11.ພິກໄທສົດ ຕາມຊອບ<br>
+        
+        12.ພິກສົດ ຕາມຊອບ<br>
+        
+        13.ໃບມະກຸດ ຕາມຊອບ
+        
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-dark terk text-white p-5 mt-5">
+  <div class="row">
+      <div class="col-lg-6">
+          <div><h3><b><i class="bi bi-bus-front-fill"></i> ລາຍການອາຫານທີ່ໄດ້ຮັບຄວາມນິຍົມ</b></h3></div>
+
+          <div class="row">
+              <div class="col-lg-4 mt-5"><img src="D:\ວິຊາ bootstrap 5\jpg\1.jpg" class="img-thumbnail img-fluid" style="width:100%;max-height:380;"></div>
+              <div class="col-lg-4 mt-5"><img src="D:\ວິຊາ bootstrap 5\jpg\2.webp" class="img-thumbnail img-fluid" style="width:100%;max-height:380;"></div>
+              <div class="col-lg-4 mt-5"><img src="D:\ວິຊາ bootstrap 5\jpg\3.webp" class="img-thumbnail img-fluid" style="width:100%;max-height:380;"></div>
+          </div>
+          
+      </div>
+
+      <div class="col-lg-6">
+          <h3><b><i class="bi bi-megaphone"></i>  ລູກຄ້າຜູ້ໃດສົມໃຈສັ່ງອາຫານໄດ້</b></h3>
+         
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"><img src="D:\ວິຊາ bootstrap 5\jpg\cza1.jpg" class="img-thumbnail img-fluid"></div>
+            <div class="col-lg-4">
+              <h4><i class="bi bi-telephome-inbound mt-3"> ຕິດຕໍ່ພວກເຮົາ</i></h4>
+              <a class="text-white mt-5" aria-label="Chat on whatsApp" href="https://web.whatsapp.com/"><h4><i class="bi bi-whatsapp mt-3" style="color: green;"></i>  whatsapp</h4></a>
+              <a class="text-white mt-5"  href="https://www.facebook.com/profile.php?id=100019968154879"><h4><i class="bi bi-facebook mt-3" style="color: dodgerblue;"></i>  facebook</h4></a>
+              <h4 class="mt-3"><i>ເບີໂທ 02056017849</i></h4>
+            </div>  
+          </div>
+
+      </div>
+  </div>   
+    
+  </div>
+</div>
+     
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+
+
+<script>
+  
+  function orderWarning() {
+    let result = confirm("ເຈົ້າແນ່ໃຈບໍວ່າຈະສັ່ງຊື້ສິນຄ້າ?");
+    if(result){
+      alert("ຂອບໃຈທີ່ສັ່ງຊື້!");
+    } else {
+      alert("ຍົກເລີກການສັ່ງຊື້");
+    }
+  }
+  
+</script>
+
+</body>
+</html>
